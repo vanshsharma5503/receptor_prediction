@@ -43,10 +43,10 @@ st.image(image, use_column_width=True)
 st.markdown("""
 # Bioactivity Prediction App (Anandamide amidohydrolase)
 
-This app allows you to predict the bioactivity towards inhibting the `Acetylcholinesterase` enzyme. `Anandamide amidohydrolase`(FAAH) is the main enzyme responsible for the degradation of anandamide, an endogenous cannabinoid that binds to cannabinoid receptors in the brain and body. FAAH is therefore a promising target for the development of new drugs that can modulate the endocannabinoid system for therapeutic purposes.
+This app allows you to predict the bioactivity towards inhibting the `Anandamide amidohydrolase` enzyme. `Anandamide amidohydrolase`(FAAH) is the main enzyme responsible for the degradation of anandamide, an endogenous cannabinoid that binds to cannabinoid receptors in the brain and body. FAAH is therefore a promising target for the development of new drugs that can modulate the endocannabinoid system for therapeutic purposes.
 
 **Credits**
-- App built in `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
+- App built in `Python` + `Streamlit` by [Vansh Sharma](https://medium.com/@chanin.nantasenamat)
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 ---
 """)
@@ -55,7 +55,7 @@ This app allows you to predict the bioactivity towards inhibting the `Acetylchol
 with st.sidebar.header('1. Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your input file", type=['txt'])
     st.sidebar.markdown("""
-[Example input file](https://raw.githubusercontent.com/dataprofessor/bioactivity-prediction-app/main/example_acetylcholinesterase.txt)
+[Example input file](https://raw.githubusercontent.com/vanshsharma5503/receptor_prediction/main/caffeic_acid_tes.txt)
 """)
 
 if st.sidebar.button('Predict'):
