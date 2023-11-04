@@ -1,0 +1,6 @@
+Smiles,Chembl-id,,,,
+O=C(O)/C=C/c1ccc(O)c(O)c1,CHEMBL145,,,,
+O=C(/C=C/c1ccc(O)c(O)c1)OCCc1ccccc1,CHEMBL319244,,,,
+O=C(/C=C/c1ccc(O)c(O)c1)NCCc1ccccc1,CHEMBL67498,,,,
+O=C(/C=C/c1ccc(O)c(O)c1)OCCc1ccc(O)c(O)c1,CHEMBL1088583,,,,
+O=C(O)/C=C/c1ccc(O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)c(O)c1,CHEMBL3092675,,,,
