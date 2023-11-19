@@ -24,7 +24,7 @@ def filedownload(df):
 # Model building
 def build_model(input_data):
     # Reads in saved regression model
-    load_model = pickle.load(open('Anandamide amidohydrolase_model.pkl', 'rb'))
+    load_model = pickle.load(open('acetylcholinesterase_model.pkl', 'rb'))
     # Apply model to make predictions
     prediction = load_model.predict(input_data)
     st.header('**Prediction output**')
@@ -41,12 +41,12 @@ st.image(image, use_column_width=True)
 
 # Page title
 st.markdown("""
-# Bioactivity Prediction App (Anandamide amidohydrolase)
+# Bioactivity Prediction App (Acetylcholinesterase)
 
-This app allows you to predict the bioactivity towards inhibting the `Anandamide amidohydrolase` enzyme. `Anandamide amidohydrolase`(FAAH) is the main enzyme responsible for the degradation of anandamide, an endogenous cannabinoid that binds to cannabinoid receptors in the brain and body. FAAH is therefore a promising target for the development of new drugs that can modulate the endocannabinoid system for therapeutic purposes.
+This app allows you to predict the bioactivity towards inhibting the `Acetylcholinesterase` enzyme. `Acetylcholinesterase` is a drug target for Alzheimer's disease.
 
 **Credits**
-- App built in `Python` + `Streamlit` by [Vansh Sharma](https://medium.com/@chanin.nantasenamat)
+- App built in `Python` + `Streamlit` by [Chanin Nantasenamat](https://medium.com/@chanin.nantasenamat) (aka [Data Professor](http://youtube.com/dataprofessor))
 - Descriptor calculated using [PaDEL-Descriptor](http://www.yapcwsoft.com/dd/padeldescriptor/) [[Read the Paper]](https://doi.org/10.1002/jcc.21707).
 ---
 """)
@@ -55,7 +55,7 @@ This app allows you to predict the bioactivity towards inhibting the `Anandamide
 with st.sidebar.header('1. Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your input file", type=['txt'])
     st.sidebar.markdown("""
-[Example input file](https://raw.githubusercontent.com/vanshsharma5503/receptor_prediction/main/caffeic_acid_tes.txt)
+[Example input file](https://raw.githubusercontent.com/dataprofessor/bioactivity-prediction-app/main/example_acetylcholinesterase.txt)
 """)
 
 if st.sidebar.button('Predict'):
